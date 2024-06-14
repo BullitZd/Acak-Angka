@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="number"],
+button {
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+input[type="number"] {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#result-container {
+    margin: 20px;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Tambahkan style animasi shake */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
